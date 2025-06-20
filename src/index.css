@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import "tailwindcss";
+@plugin "daisyui" {
+ themes: emerald --default, dark --prefersdark;
+}
+ @theme {
+    --font-primary : "Roboto", sans-serif;
+    --font-secondary : "Lexend", sans-serif;
+    --color-primaryblue : #344CB7;
+    --breakpoint-s : 380px;
+    --breakpoint-xs : 320px;
+
+    --breakpoint-notallowed : 320px;
+
+}
