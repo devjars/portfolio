@@ -4,7 +4,8 @@ import Services from "../components/Services"
 
 function Section2() {
   return (
-    <div className="w-full flex flex-col gap-4">
+    <section className="w-full rounded-2xl gap-4 flex flex-col max-w-[500px] md:gap-2
+    xl:w-[25%]   ">
       <article className="w-full">
         <Projects/>
       </article>
@@ -18,7 +19,7 @@ function Section2() {
      
       
       
-    </div>
+    </section>
   )
 }
 

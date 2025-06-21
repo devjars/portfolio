@@ -18,7 +18,7 @@ import Project1 from "../assets/project1.webp"
 import Project2 from "../assets/project2.webp"
 import Project3 from "../assets/project3.webp"
 import Project4 from "../assets/project4.webp"
-
+import profile from "../assets/profile.jpg"
 
 
 type badgetype = {
@@ -137,42 +137,31 @@ type process = {
 
 const workflow: process[] = [
   {
-    title: "Project Planning",
+    title: "Planning & Design",
     description:
-      "Understand project goals, gather requirements, and outline the overall structure before development begins.",
+      "Understand project goals, gather requirements, and create UI layouts to define the structure and visual direction.",
     icon: FaClipboardList,
-  },
-  {
-    title: "UI Design & Layout",
-    description:
-      "Build responsive layouts using semantic HTML and Tailwind CSS, ensuring mobile-first and accessible design.",
-    icon: FaPaintBrush,
   },
   {
     title: "Component Development",
     description:
-      "Create modular, reusable components to speed up development and maintain code consistency.",
+      "Build modular, reusable components to ensure consistent design and efficient development.",
     icon: FaCubes,
   },
   {
-    title: "Testing & Debugging",
+    title: "Testing & Optimization",
     description:
-      "Test across devices and browsers, debug issues, and validate performance and accessibility with tools like Lighthouse.",
+      "Test across devices and browsers, fix bugs, and optimize performance using tools like Lighthouse.",
     icon: FaBug,
   },
   {
-    title: "Optimization & SEO",
+    title: "Deployment & SEO",
     description:
-      "Optimize assets and performance, add SEO meta tags, and ensure fast, search-friendly pages.",
+      "Deploy the project to platforms like Firebase or Vercel, and implement SEO best practices for visibility.",
     icon: FaRocket,
   },
-  {
-    title: "Deployment & Maintenance",
-    description:
-      "Deploy to platforms like Firebase or Vercel and monitor for updates, bugs, or future improvements.",
-    icon: FaTools,
-  },
 ];
+
 type socials = {
   name : string
   link : string
@@ -185,8 +174,37 @@ const socials : socials[]= [
   {name : "Github", link : "no yet", icon :FaGithub   },
 
 
-
-
 ] 
+export type testimony = {
+    image : string
+    name : string
+    relation : string
+    message : string
+    date : string
+}
+const testimonies: testimony[] = [
+  {
+    image: profile,
+    name: "Juan Dela Cruz",
+    relation: "Capstone Project partner",
+    message: "Anjo was incredibly reliable and took initiative throughout our entire project. He always delivered quality work on time and was great to collaborate with.",
+    date: "March 2024"
+  },
+  {
+    image: profile,
+    name: "Maria Santos",
+    relation: "Instructor",
+    message: "John consistently showed a strong understanding of front-end development. His attention to detail and willingness to learn were impressive.",
+    date: "January 2024"
+  },
+  {
+    image: profile,
+    name: "Leo Ramirez",
+    relation: "Coworker",
+    message: "Although we didn’t work on dev-related tasks, Anjo was always dependable, fast to learn, and great at solving problems under pressure.",
+    date: "August 2023"
+  },
+];
 
-export { badge,stacks, projects,services,workflow,socials}
+
+export { badge,stacks, projects,services,workflow,socials,testimonies}

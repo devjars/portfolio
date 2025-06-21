@@ -28,7 +28,7 @@ function Services() {
 
   return (
       <Box label='Services' icon={<FaCode/>} title="Web Solution">
-<div className="w-full relative flex flex-col items-center pb-8 ">
+<div className="w-full relative flex flex-col items-center py-8 md:py-6 ">
         <Marquee direction="left" autoFill={true} speed={15} gradient={true} gradientColor="#FFFFFFCC" gradientWidth={20}>
         {service}
          </Marquee>

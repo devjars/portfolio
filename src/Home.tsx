@@ -6,15 +6,41 @@ import Section3 from './sections/Section3';
 function Home() {
  
   return (
-    <main className=" w-full  h-screen min-h-screen  grid grid-cols-1 gap-4 md:grid-cols-2 md:p-6 lg:grid-cols-3 lg:p-8 mt-2 max-w-notallowed:hidden">
-      <section className="w-full">
-        <Section1 />
-      </section>
+//     <main className=" w-full  flex justify-center   ">
 
-     <section className='w-full'>
-       <Section2 />
-     </section>
-      <Section3 />
+//       <div className='w-full sm:w-[90%] grid justify-items-center grid-cols-1 gap-4
+//        md:w-full md:grid-cols-2  lg:w-[95%] xl:w-full xl:grid-cols-3 
+//       '>
+//  <Section1 />
+//    <Section2 />
+//     <Section3 />
+//       </div>
+      
+     
+//     </main>
+//  <main className=" w-full  flex justify-center   ">
+
+//       <div className='w-full grid gap-4 grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-7
+//      max-w-[1020px] xl:max-w-full xl:gap-2 xl:max-h-[100vh] xl:overflow-hidden '>
+//       <Section2 />
+//  <Section1 />
+   
+//     <Section3 />
+//       </div>
+      
+     
+//     </main>
+ <main className=" w-full  flex justify-center   ">
+
+      <div className='w-full grid gap-4 grid-cols-1 justify-items-center md:grid-cols-2 xl:flex
+     max-w-[800px] xl:max-w-screen md:gap-2  xl:overflow-hidden '>
+      <Section2 />
+ <Section1 />
+   
+    <Section3 />
+      </div>
+      
+     
     </main>
   );
 }

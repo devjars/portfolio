@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 function Projects() {
   return (
       <Box label="Projects" title="Works Gallery" icon={<IoExtensionPuzzle/>}>
-          <div className="full flex flex-col items-center relative py-2 pb-8">
+          <div className="full flex flex-col items-center relative  py-8 md:py-8">
              <Marquee direction="left" autoFill={true} speed={15} >
              {projects.map((project,index)=>(
                 <img key={index} src={project} alt={project} className="w-32 h-24 mr-2 rounded-xl" />
