@@ -1,25 +1,31 @@
-import Features from "../components/Features"
-import Projects from "../components/Projects"
-import Services from "../components/Services"
+import Badge from "../components/Badge"
+import Header from "../components/Header"
+import Stack from "../components/Stack"
+import Status from "../components/Status"
+import { FaWhatsapp,FaViber  } from "react-icons/fa";
+
 
 function Section2() {
   return (
-    <section className="w-full rounded-2xl gap-4 flex flex-col max-w-[500px] md:gap-2
-    xl:w-[25%]   ">
-      <article className="w-full">
-        <Projects/>
-      </article>
+  <section className=" row-start-1 w-full max-w-[500px] xl:w-[30%] flex flex-col justify-between gap-4 xl:gap-2   ">
+    <div className="w-full bg-neutral/10   rounded-2xl  flex-1  flex flex-col gap-4   p-2  ">
+      <Header/>
+      <Badge/>
+       <div className="w-full grid grid-cols-2 gap-2 ">
+         <button className="btn  text-xs s:btn-lg s:text-sm btn-primary tracking-tight  ">
+          <FaWhatsapp/> WhatsApp me</button>
+         <button className="btn  text-xs s:btn-lg s:text-sm btn-primary  "> 
+         <FaViber/> Viber me</button>
+        </div>
       
-      <article className="w-full">
-        <Services/>
-      </article>
-       <article className="w-full">
-       <Features/>
-      </article>
-     
-      
-      
-    </section>
+    </div>
+    <div className="w-full h-full  xl:h-[20%]    ">
+      <Status/>
+    </div>
+    <div className="w-full xl:h-[35%]  ">
+      <Stack/>
+    </div>
+  </section>
   )
 }
 

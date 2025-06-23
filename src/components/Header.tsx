@@ -4,10 +4,9 @@ import { FcDownload } from "react-icons/fc";
 type TypewriterProps = {
   words: string[];
   speed?: number;
-  loop?: boolean;
 };
 
-function Typewriter({ words, speed = 150, loop = true }: TypewriterProps) {
+function Typewriter({ words, speed = 150}: TypewriterProps) {
   const [index, setIndex] = useState(0);      // Current word index
   const [subIndex, setSubIndex] = useState(0); // Characters typed
   const [reverse, setReverse] = useState(false);
@@ -43,12 +42,12 @@ function Typewriter({ words, speed = 150, loop = true }: TypewriterProps) {
 
 function Header() {
   return (
-    <header className="w-full flex   gap-4 flex-row">
+    <header className="w-full flex   gap-4 flex-row ">
       <div className="w-[100%] flex justify-center xl:w-[45%]">
         <img
           src={profile}
-          alt="john anthony solana profile"
-          className="w-full rounded-2xl max-w-[400px] max-h-[400px]  "
+        alt="John Anthony Solana's Profile Picture"
+          className="w-full rounded-2xl  max-w-[300px] max-h-[300px]  "
         />
       </div>
       <div className="w-full  flex flex-col justify-center items-start   relative  ">

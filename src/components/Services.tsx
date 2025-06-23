@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee"
 const servicesrevese = services.slice().reverse().map((stack,index)=>{
 return (
     <div key={index} className=" flex  items-center p-2 pr-4 bg-base-100 gap-2 rounded-xl text-neutral/80 mr-2">
-                <span className="p-2 bg-neutral/5 rounded-lg">
+                <span className="p-2 bg-neutral/10 rounded-lg">
                     <stack.icon className="text-xl"/>
                 </span>
                 <p className="font-medium font-secondary">{stack.headline}</p>
@@ -16,8 +16,8 @@ return (
 })
 const service = services.map((Stack,index)=>{
     return (
-        <div key={index} className=" flex  items-center p-2 pr-4 bg-base-100 gap-2 rounded-xl text-neutral/80 mr-2">
-                <span className="p-2 bg-neutral/5 rounded-lg">
+        <div key={index} className=" flex  items-center p-2 pr-4 bg-base-100 gap-2 rounded-xl text-neutral/80 mr-4">
+                <span className="p-2 bg-neutral/10 rounded-lg">
                     <Stack.icon className="text-xl"/>
                 </span>
                 <p className="font-medium font-secondary">{Stack.headline}</p>
@@ -28,16 +28,16 @@ function Services() {
 
   return (
       <Box label='Services' icon={<FaCode/>} title="Web Solution">
-<div className="w-full relative flex flex-col items-center py-8 md:py-6 ">
+<div className="w-full h-full relative flex flex-col justify-center items-center pb-4 gap-2 ">
         <Marquee direction="left" autoFill={true} speed={15} gradient={true} gradientColor="#FFFFFFCC" gradientWidth={20}>
         {service}
          </Marquee>
-          <Marquee direction="right" autoFill={true} speed={15} gradient={true} gradientColor="#FFFFFFCC" gradientWidth={20} className="mt-3">
+          <Marquee direction="right" autoFill={true} speed={15} gradient={true} gradientColor="#FFFFFFCC" gradientWidth={20} >
             {servicesrevese}
          </Marquee>
          {/* View More (opens modal) */}
         <button
-          className="btn btn-primary absolute inset-y-[60%] z-50 px-8"
+          className="btn btn-primary absolute inset-y-[65%] z-50 px-8"
           onClick={() =>(document.getElementById('my_modal_2') as HTMLDialogElement)?.showModal()}
         >
           View all

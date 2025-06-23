@@ -1,4 +1,3 @@
-import { useEffect, useContext } from 'react';
 import Section1 from './sections/Section1';
 import Section2 from './sections/Section2';
 import Section3 from './sections/Section3';
@@ -6,42 +5,17 @@ import Section3 from './sections/Section3';
 function Home() {
  
   return (
-//     <main className=" w-full  flex justify-center   ">
 
-//       <div className='w-full sm:w-[90%] grid justify-items-center grid-cols-1 gap-4
-//        md:w-full md:grid-cols-2  lg:w-[95%] xl:w-full xl:grid-cols-3 
-//       '>
-//  <Section1 />
-//    <Section2 />
-//     <Section3 />
-//       </div>
-      
-     
-//     </main>
-//  <main className=" w-full  flex justify-center   ">
+ <main className=" w-full   flex justify-center items-center bg-neutral/10 p-3 md:gap-4  ">
 
-//       <div className='w-full grid gap-4 grid-cols-1 justify-items-center md:grid-cols-2 xl:grid-cols-7
-//      max-w-[1020px] xl:max-w-full xl:gap-2 xl:max-h-[100vh] xl:overflow-hidden '>
-//       <Section2 />
-//  <Section1 />
-   
-//     <Section3 />
-//       </div>
-      
-     
-//     </main>
- <main className=" w-full  flex justify-center   ">
+      <div className='w-full h-full grid  justify-items-center gap-4 grid-cols-1  md:grid-cols-2 md:gap-2  lg:max-w-[1024px]
+        xl:max-h-[800px] xl:flex xl:max-w-[1440px]'>
+          <Section1/>
+          <Section2/>
+          <Section3/>
 
-      <div className='w-full grid gap-4 grid-cols-1 justify-items-center md:grid-cols-2 xl:flex
-     max-w-[800px] xl:max-w-screen md:gap-2  xl:overflow-hidden '>
-      <Section2 />
- <Section1 />
-   
-    <Section3 />
       </div>
-      
-     
-    </main>
+    </main> 
   );
 }
 

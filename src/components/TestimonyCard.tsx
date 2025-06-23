@@ -1,4 +1,3 @@
-import React from 'react'
 import type { testimony } from '../assets/data'
 
 type props = testimony & {

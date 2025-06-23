@@ -12,19 +12,21 @@ function Testimonials() {
       label="Testimonials"
       icon={<MdReviews />}
       title="Words from Peers and Professionals"
+      classname="overflow-hidden"
     >
-      <div className="overflow-hidden h-[40vh] relative xs:px-2 s:px-4 border-t border-neutral/10 md:h-[20vh]  ">
+      <div className=" h-[30vh] relative xs:px-2 s:px-4 border-t border-neutral/10 md:h-[25vh] min-h-[25vh]  ">
         <motion.div
           className="flex flex-col gap-4"
           animate={{ y: ["0%", "-50%"] }}
           transition={{
-            duration: 20,
+            duration: 30,
             ease: "linear",
             repeat: Infinity,
           }}
         >
           {duplicatedList.map((testimony,index) => (
            <TestimonyCard 
+           key={index}
            index={index}
            name={testimony.name}
             image={testimony.image} 

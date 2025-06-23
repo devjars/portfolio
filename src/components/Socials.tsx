@@ -6,7 +6,7 @@ import { FaShare } from "react-icons/fa";
 function Socials() {
   return (
       <Box label="Follow Me" icon={<FaShare/>} title="Online Presence">
-            <div className="w-full h-full p-2 flex flex-col gap-2 ">
+            <div className="w-full h-full p-2 flex flex-col justify-center gap-2 ">
                 {socials.map((social,index)=>(
                    <a 
                         href={social.link}
@@ -14,12 +14,12 @@ function Socials() {
                           target="_blank"
                          rel="noopener noreferrer"
                          aria-label={`Visit my ${social.name}`} 
-                         className="w-full  p-1  rounded-xl flex items-center justify-between bg-base-100">
+                         className="w-full  p-3  rounded-2xl flex items-center justify-between bg-base-100 xl:p-2">
                   <span className="flex items-center gap-2">  
-                    <span className="p-3 bg-neutral/5 rounded-lg text-xl xl:text-lg xl:p-1">{<social.icon/>}</span>
+                    <span className="p-3 bg-neutral/10 rounded-lg text-xl xl:text-lg xl:p-2">{<social.icon/>}</span>
                     <span className="font-secondary font-medium">{social.name}</span>
                     </span>
-                    <span className=" text-2xl">{<CgArrowTopRight/>}</span>
+                    <span className=" text-2xl xl:hidden">{<CgArrowTopRight/>}</span>
                    </a>
                 ))}
             </div>

@@ -1,24 +1,47 @@
 import type { IconType } from "react-icons"
 import { FaSchool } from "react-icons/fa6";
-import { IoSchoolSharp } from "react-icons/io5";
+import { IoSchoolSharp,IoLogoFirebase  } from "react-icons/io5";
 import { IoIosGlobe } from "react-icons/io";
 import { MdLocationPin,MdVerified ,MdUpdate} from "react-icons/md";
-import { RiReactjsLine ,RiTailwindCssFill } from "react-icons/ri";
-import { FaNodeJs,FaLaptopCode, FaRocket ,
-    FaSearch,
-  FaUniversalAccess,
-FaClipboardList, FaPaintBrush, FaCubes, FaBug, FaTools,FaLinkedin,FaFacebookSquare ,FaGithub   } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
+import { RiReactjsLine  } from "react-icons/ri";
 
+  
 import { HiOutlineSparkles } from 'react-icons/hi';
 import { BiDevices,BiBug } from 'react-icons/bi';
 import { TbRocket } from 'react-icons/tb';
 import { AiFillInstagram } from "react-icons/ai";
 import Project1 from "../assets/project1.webp"
-import Project2 from "../assets/project2.webp"
 import Project3 from "../assets/project3.webp"
-import Project4 from "../assets/project4.webp"
 import profile from "../assets/profile.jpg"
+import {
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaGitAlt,
+  FaGithub,
+  FaNodeJs,
+  FaLaptopCode,
+  FaRocket,
+  FaSearch,
+  FaUniversalAccess,
+  FaClipboardList,
+  FaCubes,
+  FaBug,
+  FaLinkedin,
+  FaFacebookSquare,
+} from "react-icons/fa";
+
+import {
+  SiFirebase,
+  SiTypescript,
+  SiMysql,
+  SiPostman,
+  SiCanva,
+  SiTailwindcss,
+} from "react-icons/si";
+
+
 
 
 type badgetype = {
@@ -30,7 +53,28 @@ type service = {
     subheadline : string,
     icon : IconType 
 }
+export type testimony = {
+    image : string
+    name : string
+    relation : string
+    message : string
+    date : string
+}
+type socials = {
+  name : string
+  link : string
+  icon : IconType
+}
 
+type project = {
+  image: string;
+  title: string;
+  description: string;
+  tools: {
+    icon: IconType;
+    name: string;
+  }[];
+};
 
 
 const badge : badgetype[] = [
@@ -48,30 +92,21 @@ const badge : badgetype[] = [
 export const experience:number = 1
 export const project : number = 3
 
-const stacks:badgetype[] = [
-    {text : "React", icon: RiReactjsLine},
-    {text : "Tailwind CSS", icon: RiTailwindCssFill},
-    {text : "Express", icon: FaNodeJs},
-    {text : "MySQL", icon: SiMysql},
-
-
-
-    
-]
-
-//  { icon: FaReact, name: "React" },
-//   { icon: SiFirebase, name: "Firebase" },
-//   { icon: FaHtml5, name: "HTML5" },
-//   { icon: FaCss3Alt, name: "CSS" },
-//   { icon: FaJsSquare, name: "JavaScript" },
-//   { icon: SiTypescript, name: "TypeScript" },
-//   { icon: SiMysql, name: "MySQL" },
-//   { icon: SiNodedotjs, name: "Express JS" },
-//   { icon: SiTailwindcss, name: "Tailwind CSS" },
-//   { icon: FaGitAlt, name: "Git" },
-//   { icon: FaGithub, name: "GitHub" },
-//   { icon: SiPostman, name: "Postman" },
-//   { icon: SiCanva, name: "Canva" },
+const stacks: badgetype[] = [
+  { text: "React", icon: FaReact },
+  { text: "Firebase", icon: SiFirebase },
+  { text: "HTML5", icon: FaHtml5 },
+  { text: "CSS3", icon: FaCss3Alt },
+  { text: "JavaScript", icon: FaJsSquare },
+  { text: "TypeScript", icon: SiTypescript },
+  { text: "MySQL", icon: SiMysql },
+  { text: "Express JS", icon: FaNodeJs }, // or use SiNodedotjs if preferred
+  { text: "Tailwind CSS", icon: SiTailwindcss },
+  { text: "Git", icon: FaGitAlt },
+  { text: "GitHub", icon: FaGithub },
+  { text: "Postman", icon: SiPostman },
+  { text: "Canva", icon: SiCanva },
+];
  const services: service[] = [
   {
     headline: "Website Development",
@@ -119,7 +154,7 @@ export const features : badgetype[] = [
     icon: BiDevices,
   },
   {
-    text: "Accessible for All",
+    text: "Accessible ",
     icon: FaUniversalAccess,
   },
   
@@ -128,7 +163,24 @@ export const features : badgetype[] = [
 
 
 
-const projects : string [] = [Project1,Project2,Project3,Project4]
+const projects : project [] = [
+ 
+   {image : Project1 , 
+    title : "Web based information management system", description : "A dynamic school website that includes both public-facing features and a private admin dashboard for content management.  responsive, interactive, and secure platform for managing school content and enhancing user experience.",
+  tools : [
+    {icon : IoLogoFirebase , name : "Firebase"},
+  {icon: RiReactjsLine, name : "React"}]},
+    {image : Project3 ,
+       title : "Elle Power Electrical Contractor Website", description : "A professional business website for Elle Power, an electrical contractor, showcasing their services, past projects, and contact information.",
+      tools : [
+    {icon : IoLogoFirebase , name : "Firebase"},
+    
+  {icon: RiReactjsLine, name : "React"}]},
+  
+  
+   
+  ]
+
 type process = {
   title: string;
   description: string;
@@ -143,7 +195,7 @@ const workflow: process[] = [
     icon: FaClipboardList,
   },
   {
-    title: "Component Development",
+    title: "Development",
     description:
       "Build modular, reusable components to ensure consistent design and efficient development.",
     icon: FaCubes,
@@ -155,18 +207,15 @@ const workflow: process[] = [
     icon: FaBug,
   },
   {
-    title: "Deployment & SEO",
-    description:
-      "Deploy the project to platforms like Firebase or Vercel, and implement SEO best practices for visibility.",
-    icon: FaRocket,
-  },
+  title: "Deployment & SEO",
+  description:
+    "Prepare the project for deployment based on client preferences and integrate SEO best practices to ensure visibility and reach.",
+  icon: FaRocket,
+}
+
 ];
 
-type socials = {
-  name : string
-  link : string
-  icon : IconType
-}
+
 const socials : socials[]= [
   {name : "Linkedin", link : "no yet", icon :FaLinkedin  },
   {name : "Facebook", link : "no yet", icon :FaFacebookSquare  },
@@ -175,17 +224,11 @@ const socials : socials[]= [
 
 
 ] 
-export type testimony = {
-    image : string
-    name : string
-    relation : string
-    message : string
-    date : string
-}
+
 const testimonies: testimony[] = [
   {
     image: profile,
-    name: "Juan Dela Cruz",
+    name: "Joshua Villamero",
     relation: "Capstone Project partner",
     message: "Anjo was incredibly reliable and took initiative throughout our entire project. He always delivered quality work on time and was great to collaborate with.",
     date: "March 2024"
