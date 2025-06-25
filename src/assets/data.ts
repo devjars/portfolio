@@ -13,6 +13,11 @@ import { AiFillInstagram } from "react-icons/ai";
 import Project1 from "../assets/project1.webp"
 import Project3 from "../assets/project3.webp"
 import profile from "../assets/profile.webp"
+import Markgabriel from "../assets/markgabriel.webp"
+import Villamero from "../assets/image (1).webp"
+import Aziel from "../assets/image (2).webp"
+
+
 import {
   FaReact,
   FaHtml5,
@@ -95,7 +100,7 @@ export const project : number = 3
 const stacks: badgetype[] = [
   { text: "React", icon: FaReact },
   { text: "Firebase", icon: SiFirebase },
-  { text: "HTML5", icon: FaHtml5 },
+  { text: "HTML", icon: FaHtml5 },
   { text: "CSS3", icon: FaCss3Alt },
   { text: "JavaScript", icon: FaJsSquare },
   { text: "TypeScript", icon: SiTypescript },
@@ -227,22 +232,22 @@ const socials : socials[]= [
 
 const testimonies: testimony[] = [
   {
-    image: profile,
+    image: Villamero,
     name: "Joshua Villamero",
     relation: "Capstone Project partner",
     message: "Anjo was incredibly reliable and took initiative throughout our entire project. He always delivered quality work on time and was great to collaborate with.",
-    date: "March 2024"
+    date: "November 2024"
   },
   {
-    image: profile,
-    name: "Maria Santos",
-    relation: "Instructor",
+    image: Aziel,
+    name: "Aziel Taruc",
+    relation: "LPT,Computer Engineer  ",
     message: "John consistently showed a strong understanding of front-end development. His attention to detail and willingness to learn were impressive.",
     date: "January 2024"
   },
   {
-    image: profile,
-    name: "Leo Ramirez",
+    image: Markgabriel,
+    name: "Mark Gabriel",
     relation: "Coworker",
     message: "Although we didn’t work on dev-related tasks, Anjo was always dependable, fast to learn, and great at solving problems under pressure.",
     date: "August 2023"

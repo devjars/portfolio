@@ -11,12 +11,30 @@ function Section2() {
     <div className="w-full bg-neutral/10   rounded-2xl  flex-1  flex flex-col gap-4   p-2  ">
       <Header/>
       <Badge/>
-       <div className="w-full grid grid-cols-2 gap-2 ">
-         <button className="btn  text-xs s:btn-lg s:text-sm btn-primary tracking-tight  ">
-          <FaWhatsapp/> WhatsApp me</button>
-         <button className="btn  text-xs s:btn-lg s:text-sm btn-primary  "> 
-         <FaViber/> Viber me</button>
-        </div>
+      <div className="w-full grid grid-cols-2 gap-2">
+  <a
+    href="https://wa.me/639554368437"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full"
+  >
+    <button className="btn text-xs s:btn-lg s:text-sm btn-primary tracking-tight w-full">
+      <FaWhatsapp /> WhatsApp me
+    </button>
+  </a>
+
+  <a
+    href="viber://chat?number=%2B639554368437"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full"
+  >
+    <button className="btn text-xs s:btn-lg s:text-sm btn-primary w-full">
+      <FaViber /> Viber me
+    </button>
+  </a>
+</div>
+
       
     </div>
     <div className="w-full h-full  xl:h-[20%]    ">
