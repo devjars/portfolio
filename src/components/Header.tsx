@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import profile from "../assets/profile.webp";
 import { FcDownload } from "react-icons/fc";
-import Resume from "../../public/JARS-resume.pdf"
 
 type TypewriterProps = {
   words: string[];
