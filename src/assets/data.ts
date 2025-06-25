@@ -217,10 +217,10 @@ const workflow: process[] = [
 
 
 const socials : socials[]= [
-  {name : "Linkedin", link : "no yet", icon :FaLinkedin  },
-  {name : "Facebook", link : "no yet", icon :FaFacebookSquare  },
-  {name : "Instagram", link : "no yet", icon :AiFillInstagram  },
-  {name : "Github", link : "no yet", icon :FaGithub   },
+  {name : "Linkedin", link : "https://www.linkedin.com/in/johnanthonysolana/", icon :FaLinkedin  },
+  {name : "Facebook", link : "https://www.facebook.com/john.anthony.solana.2024/", icon :FaFacebookSquare  },
+  {name : "Instagram", link : "https://www.instagram.com/anjo_solana/", icon :AiFillInstagram  },
+  {name : "Github", link : "https://github.com/devjars", icon :FaGithub   },
 
 
 ] 
