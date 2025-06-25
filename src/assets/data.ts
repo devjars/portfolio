@@ -12,7 +12,6 @@ import { TbRocket } from 'react-icons/tb';
 import { AiFillInstagram } from "react-icons/ai";
 import Project1 from "../assets/project1.webp"
 import Project3 from "../assets/project3.webp"
-import profile from "../assets/profile.webp"
 import Markgabriel from "../assets/markgabriel.webp"
 import Villamero from "../assets/image (1).webp"
 import Aziel from "../assets/image (2).webp"
