@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import profile from "../assets/profile.jpg";
+import profile from "../assets/profile.webp";
 import { FcDownload } from "react-icons/fc";
 type TypewriterProps = {
   words: string[];
@@ -51,14 +51,18 @@ function Header() {
         />
       </div>
       <div className="w-full  flex flex-col justify-center items-start   relative  ">
-              <a
-        href="/resume.pdf"
-        download
-        className="btn btn-primary btn-xs absolute top-0 right-0 s:btn-sm "
-      >
-          Resume
-          <FcDownload/>
-      </a>
+        
+<div className="tooltip tooltip-bottom  absolute top-0 right-0">
+  <div className="tooltip-content">
+    <div className="animate-bounce text-orange-400 -rotate-10 text-xl font-black">yehey!</div>
+  </div>
+  <a href="/resume.pdf" download className="btn btn-primary btn-xs s:btn-sm">
+    Resume
+    <FcDownload />
+  </a>
+</div>
+
+
 
        
         <h1 className="text-neutral font-black font-primary text-2xl mt-2 min-[450px]:text-4xl">

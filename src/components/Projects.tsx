@@ -9,7 +9,7 @@ function Projects() {
           <div className="w-full h-full  flex flex-col justify-center items-center relative  ">
              <Marquee direction="left" autoFill={true} speed={15} >
              {projects.map((project,index)=>(
-                <img key={index} src={project.image} alt={project.title} className="w-32 h-24 mr-2 rounded-xl" />
+                <img loading="lazy" key={index} src={project.image} alt={project.title} className="w-32 h-24 mr-2 rounded-xl" />
             ))}
            </Marquee>
 
@@ -33,7 +33,7 @@ function Projects() {
       {projects.map((pro, index) => (
         <div key={index} className=" max-w-[350px] bg-neutral/10 rounded-xl p-4 relative">
           <div className="flex  gap-2">
-            <img src={pro.image} alt={pro.title} 
+            <img loading="lazy" src={pro.image} alt={pro.title} 
             className="w-[100px] lg:w-[150px] "/>
             <h2 className="font-medium">{pro.title}</h2>
           </div>

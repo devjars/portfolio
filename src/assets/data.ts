@@ -12,7 +12,7 @@ import { TbRocket } from 'react-icons/tb';
 import { AiFillInstagram } from "react-icons/ai";
 import Project1 from "../assets/project1.webp"
 import Project3 from "../assets/project3.webp"
-import profile from "../assets/profile.jpg"
+import profile from "../assets/profile.webp"
 import {
   FaReact,
   FaHtml5,
@@ -66,7 +66,7 @@ type socials = {
   icon : IconType
 }
 
-type project = {
+export type projecttype = {
   image: string;
   title: string;
   description: string;
@@ -163,7 +163,7 @@ export const features : badgetype[] = [
 
 
 
-const projects : project [] = [
+const projects : projecttype [] = [
  
    {image : Project1 , 
     title : "Web based information management system", description : "A dynamic school website that includes both public-facing features and a private admin dashboard for content management.  responsive, interactive, and secure platform for managing school content and enhancing user experience.",
