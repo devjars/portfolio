@@ -21,7 +21,7 @@ function Footer() {
       </div>
 
       {/* Email Button with mailto */}
-      <a href="mailto:johnanthonysolana7@gmail.com" target="_blank" rel="noopener noreferrer">
+      <a href="mailto:johnanthonysolana7@gmail.com" target="_blank" rel="noopener noreferrer" className="w-full">
         <button className="btn btn-primary btn-wide">
           <MdEmail size={24} className="mr-2" />
           Email Me
