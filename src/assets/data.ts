@@ -182,9 +182,13 @@ const projects : projecttype [] = [
         description : "A professional business website for Elle Power, an electrical contractor, showcasing their services, past projects, and contact information.",
         link :"https://ellepower.netlify.app/ ",
       tools : [
-    {icon : IoLogoFirebase , name : "Firebase"},
-    
-  {icon: RiReactjsLine, name : "React"}]},
+  {icon: RiReactjsLine, name : "React"},
+    {icon : SiTailwindcss , name : "Tailwind"},
+    {icon : SiTypescript , name : "TypeScript"},
+
+
+]},
+  
   
   
    
