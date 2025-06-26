@@ -39,9 +39,9 @@ function Projects() {
           </div>
           <div className="">
             <p className="text-sm mt-2">{pro.description}</p>
-            <ul className="p-2 flex items-center flex-wrap gap-2">
+            <ul className="p-2 flex items-center flex-wrap gap-2 pr-8">
               {pro.tools.map((tool,index)=>(
-                <li key={index} className=" flex items-center"><span><tool.icon/></span> <span>{tool.name}</span></li>
+                <li key={index} className=" flex items-center gap-2 flex-wrap "><span><tool.icon/></span> <span>{tool.name}</span></li>
               ))}
             </ul>
           <a href={pro.link} 
