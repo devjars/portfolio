@@ -74,6 +74,7 @@ export type projecttype = {
   image: string;
   title: string;
   description: string;
+  link : string;
   tools: {
     icon: IconType;
     name: string;
@@ -170,12 +171,16 @@ export const features : badgetype[] = [
 const projects : projecttype [] = [
  
    {image : Project1 , 
-    title : "Web based information management system", description : "A dynamic school website that includes both public-facing features and a private admin dashboard for content management.  responsive, interactive, and secure platform for managing school content and enhancing user experience.",
+    title : "Web based information management system", 
+    description : "A dynamic school website that includes both public-facing features and a private admin dashboard for content management.  responsive, interactive, and secure platform for managing school content and enhancing user experience.",
+    link : "https://swbimssis.web.app/",
   tools : [
     {icon : IoLogoFirebase , name : "Firebase"},
   {icon: RiReactjsLine, name : "React"}]},
     {image : Project3 ,
-       title : "Elle Power Electrical Contractor Website", description : "A professional business website for Elle Power, an electrical contractor, showcasing their services, past projects, and contact information.",
+       title : "Elle Power Electrical Contractor Website",
+        description : "A professional business website for Elle Power, an electrical contractor, showcasing their services, past projects, and contact information.",
+        link :"https://ellepower.netlify.app/ ",
       tools : [
     {icon : IoLogoFirebase , name : "Firebase"},
     

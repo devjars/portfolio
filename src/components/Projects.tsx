@@ -44,7 +44,11 @@ function Projects() {
                 <li key={index} className=" flex items-center"><span><tool.icon/></span> <span>{tool.name}</span></li>
               ))}
             </ul>
-            <button className="btn btn-primary mt-2 absolute right-0 bottom-0 m-2">Visit Link</button>
+          <a href={pro.link} 
+           target="_blank"
+            rel="noopener noreferrer">
+              <button className="btn btn-primary mt-2 absolute right-0 bottom-0 m-2">Visit Link</button>
+          </a>
           </div>
         </div>
       ))}
