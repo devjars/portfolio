@@ -1,50 +1,65 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Character encoding -->
     <meta charset="UTF-8" />
-
-    <!-- Viewport for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Title -->
     <title>Jars Portfolio</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/webp" href="/jarslogo.webp" />
 
-    <!-- Fonts Preloading -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Example font (adjust as needed) -->
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- SEO Meta Tags -->
-     <meta name="description" content="Jars Portfolio — a personal profile highlighting my background, skills, contact information, and professional details." />
+    <!-- ✅ Basic SEO -->
+    <meta name="description" content="Jars Portfolio — a personal profile highlighting my background, skills, contact information, and professional details." />
     <meta name="keywords" content="Jars, portfolio, web developer, UI/UX, frontend, React, TypeScript" />
     <meta name="author" content="John Anthony Solana" />
+    <link rel="canonical" href="https://jarsportfolio.vercel.app/" />
 
-    <!-- Open Graph (OG) Tags for social media previews -->
+    <!-- ✅ Open Graph (for Facebook, LinkedIn) -->
     <meta property="og:title" content="Jars Portfolio" />
     <meta property="og:description" content="Explore the portfolio of Jars — modern web design, development, and projects." />
-    <meta property="og:image" content="/jarslogo.webp" />
-    <meta property="og:url" content="https://your-portfolio-url.com" />
+    <meta property="og:image" content="https://jarsportfolio.vercel.app/jarslogo.webp" />
+    <meta property="og:url" content="https://jarsportfolio.vercel.app/" />
     <meta property="og:type" content="website" />
 
-    <!-- Twitter Card -->
+    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Jars Portfolio" />
     <meta name="twitter:description" content="Explore the portfolio of Jars — modern web design, development, and projects." />
-    <meta name="twitter:image" content="/jarslogo.webp" />
+    <meta name="twitter:image" content="https://jarsportfolio.vercel.app/jarslogo.webp" />
+    <!-- Optional: Add your Twitter handle if you have one
+    <meta name="twitter:site" content="@your_handle" />
+    <meta name="twitter:creator" content="@your_handle" /> -->
 
-    <!-- Tidio Chat Script -->
+    <!-- ✅ Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "John Anthony Solana",
+      "url": "https://jarsportfolio.vercel.app/",
+      "sameAs": [
+        "https://github.com/devjars",
+        "https://www.linkedin.com/in/johnanthonysolana/"
+      ],
+      "jobTitle": "Web Developer",
+      "image": "https://jarsportfolio.vercel.app/jarslogo.webp"
+    }
+    </script>
+
+    <!-- ✅ Tidio Chat Script -->
     <script src="//code.tidio.co/5mvzfmk6ovt6t6g1iab4gcrwtba6rydm.js" async></script>
   </head>
 
-  <body class="font-primary bg-neutral/10 flex justify-center items-center   ">
+  <body class="font-primary bg-neutral/10 2xl:w-screen 2xl:h-screen 2xl:flex 2xl:justify-center 2xl:items-center">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

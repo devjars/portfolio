@@ -2,6 +2,7 @@ import Home from './Home'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import { lazy, Suspense, useEffect, useState } from 'react'
 const Projects = lazy(()=>import("./pages/Projects"))
+const Services  = lazy (()=>import("./pages/Services"))
 function App() {
   const [width,setwidth] = useState(window.innerWidth)
 
@@ -29,6 +30,8 @@ function App() {
          <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/work' element={<Projects/>} />
+          <Route path='/services' element={<Services/>} />
+
 
         </Routes>
        </Suspense>
