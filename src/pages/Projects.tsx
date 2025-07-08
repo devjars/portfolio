@@ -8,8 +8,13 @@ import Stack from "../components/Stack";
 import Process from "../components/Process";
 import Footer from "../components/Footer";
 import Status from "../components/Status";
+import { useEffect } from "react";
 function Projects() {
-  return (
+
+ useEffect(() => {
+  window.scrollTo({ top: 0, behavior: 'auto' }); 
+}, []);
+return (
   <div className="w-full bg-neutral/10 px-3 lg:p-3 ">
 <div className="w-full   mx-auto pt-3 flex flex-col md:flex-row-reverse md:justify-center gap-4  lg:max-w-[1024px]
         xl:max-h-[800px] xl:flex xl:max-w-[1440px]">
