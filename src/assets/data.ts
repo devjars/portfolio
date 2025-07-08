@@ -4,17 +4,22 @@ import { IoSchoolSharp,IoLogoFirebase  } from "react-icons/io5";
 import { IoIosGlobe } from "react-icons/io";
 import { MdLocationPin,MdVerified ,MdUpdate} from "react-icons/md";
 import { RiReactjsLine  } from "react-icons/ri";
-
+import { BsFillLaptopFill } from "react-icons/bs";
   
 import { HiOutlineSparkles } from 'react-icons/hi';
 import { BiDevices,BiBug } from 'react-icons/bi';
 import { TbRocket } from 'react-icons/tb';
 import { AiFillInstagram } from "react-icons/ai";
 import Project1 from "../assets/project1.webp"
+import Project2 from "../assets/project2.webp"
 import Project3 from "../assets/project3.webp"
+import Project4 from "../assets/project4.webp"
+
+
+// import Project3 from "../assets/project3.webp"
 import Markgabriel from "../assets/markgabriel.webp"
 import Villamero from "../assets/image (1).webp"
-import Aziel from "../assets/image (2).webp"
+import Aziel from "../assets/azel.webp"
 
 
 import {
@@ -34,6 +39,8 @@ import {
   FaBug,
   FaLinkedin,
   FaFacebookSquare,
+  FaUserAlt ,
+  FaFolder 
 } from "react-icons/fa";
 
 import {
@@ -69,12 +76,18 @@ type socials = {
   link : string
   icon : IconType
 }
+type navtype = {
+  icon : IconType
+  text : string
+  link : string
+}
 
 export type projecttype = {
   image: string;
   title: string;
   description: string;
   link : string;
+   color : string
   tools: {
     icon: IconType;
     name: string;
@@ -95,7 +108,15 @@ const badge : badgetype[] = [
 ]
 
 export const experience:number = 1
-export const project : number = 3
+export const project : number = 4
+
+const nav :navtype [] = [
+  {link : "/", text : "About", icon : FaUserAlt },
+  {link : "/work" ,text : "Works", icon : FaFolder  },
+  {link : "/services", text : "Services", icon : BsFillLaptopFill},
+
+
+]
 
 const stacks: badgetype[] = [
   { text: "React", icon: FaReact },
@@ -169,25 +190,98 @@ export const features : badgetype[] = [
 
 
 const projects : projecttype [] = [
- 
-   {image : Project1 , 
-    title : "Web based information management system", 
-    description : "A dynamic school website that includes both public-facing features and a private admin dashboard for content management.  responsive, interactive, and secure platform for managing school content and enhancing user experience.",
-    link : "https://swbimssis.web.app/",
-  tools : [
-    {icon : IoLogoFirebase , name : "Firebase"},
-  {icon: RiReactjsLine, name : "React"}]},
-    {image : Project3 ,
-       title : "Elle Power Electrical Contractor Website",
-        description : "A professional business website for Elle Power, an electrical contractor, showcasing their services, past projects, and contact information.",
-        link :"https://ellepower.netlify.app/ ",
-      tools : [
-  {icon: RiReactjsLine, name : "React"},
-    {icon : SiTailwindcss , name : "Tailwind"},
-    {icon : SiTypescript , name : "TypeScript"},
+ // Project 1
+{
+  image: Project1,
+  title: "Jars Web Services Landing Page",
+  description: "A professional landing page for Jars Web Services, showcasing the brand, services, and contact details. Designed to be fully responsive, visually appealing, and optimized for user engagement.",
+  link: "https://jarswebservices.netlify.app/",
+  color : "bg-blue-900",
+  tools: [
+    {
+      icon: RiReactjsLine,
+      name: "React",
+    },
+    {
+      icon: SiTypescript,
+      name: "TypeScript",
+    },
+    {
+      icon: SiTailwindcss,
+      name: "Tailwind",
+    }
+  ]
+},
+
+// Project 2
+{
+  image: Project2,
+  title: "Elle Power Electrical Contractor Website",
+  description: "A professional business website for Elle Power, an electrical contractor, showcasing their services, past projects, and contact information.",
+  link: "https://ellepower.netlify.app/",
+  color : "bg-red-800/80",
+  tools: [
+    {
+      icon: RiReactjsLine,
+      name: "React",
+    },
+    {
+      icon: SiTailwindcss,
+      name: "Tailwind",
+    },
+    {
+      icon: SiTypescript,
+      name: "TypeScript",
+    }
+  ]
+},
+
+  {
+  image: Project3,
+  title: "Genethink Thesis Title Generator",
+  description: "A simple AI-powered thesis title generator for students. Users can select or type their course and instantly get relevant thesis ideas. No login required. Built with React and Express.",
+  link: "https://jarsthesis-title-generator.vercel.app/",
+  color: "bg-purple-700",
+  tools: [
+    {
+      icon: RiReactjsLine,
+      name: "React",
+    },
+    {
+      icon: SiTailwindcss,
+      name: "Tailwind",
+    },
+    {
+      icon: SiTypescript,
+      name: "TypeScript",
+    },
+    {
+      icon: FaNodeJs,
+      name: "Express.js",
+    }
+  ]
+},
 
 
-]},
+   {
+  image: Project4, 
+  title: "Web based information management system", 
+  description: "A dynamic school website that includes both public-facing features and a private admin dashboard for content management. Responsive, interactive, and secure platform for managing school content and enhancing user experience.",
+  color : "bg-blue-900/90",
+  link: "https://swbimssis.web.app/",
+  tools: [
+    {
+      icon: IoLogoFirebase,
+      name: "Firebase",
+    },
+    {
+      icon: RiReactjsLine,
+      name: "React",
+    }
+  ]
+}
+
+  
   
   
   
@@ -263,4 +357,4 @@ const testimonies: testimony[] = [
 ];
 
 
-export { badge,stacks, projects,services,workflow,socials,testimonies}
+export { badge,stacks, projects,services,workflow,socials,testimonies,nav}

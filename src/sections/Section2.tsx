@@ -1,5 +1,6 @@
 import Badge from "../components/Badge"
 import Header from "../components/Header"
+import Nav from "../components/Nav";
 import Stack from "../components/Stack"
 import Status from "../components/Status"
 import { FaWhatsapp,FaViber  } from "react-icons/fa";
@@ -8,7 +9,9 @@ import { FaWhatsapp,FaViber  } from "react-icons/fa";
 function Section2() {
   return (
   <section className=" row-start-1 w-full max-w-[500px] xl:w-[30%] flex flex-col justify-between gap-4 xl:gap-2   ">
-    <div className="w-full bg-neutral/10   rounded-2xl  flex-1  flex flex-col gap-4   p-2  ">
+     <div className=""><Nav/>  </div>
+    <div className="w-full bg-neutral/10   rounded-2xl  flex-1  flex flex-col gap-4   p-2  shadow-md border border-neutral/10 ">
+   
       <Header/>
       <Badge/>
       <div className="w-full grid grid-cols-2 gap-2">
