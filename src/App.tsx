@@ -28,7 +28,7 @@ function App() {
        <Suspense fallback={<div className='w-screen h-screen flex justify-center items-center'><span className="loading loading-bars loading-xl"></span></div>}>
          <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/project' element={<Projects/>} />
+          <Route path='/work' element={<Projects/>} />
 
         </Routes>
        </Suspense>
