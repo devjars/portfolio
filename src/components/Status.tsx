@@ -2,7 +2,15 @@ import { project,experience } from "../assets/data"
 import { IoExtensionPuzzle } from "react-icons/io5";
 import { GoPlus } from "react-icons/go";
 import { FaUserTie } from "react-icons/fa";
+import { useEffect } from "react";
 function Status() {
+
+useEffect(()=>{
+
+})
+
+
+
   return (
     <div className="w-full h-full grid grid-cols-2 gap-2 ">
          <div className="bg-neutral/10 p-4 rounded-xl flex flex-col items-center justify-center gap-4 shadow-md border border-neutral/10 ">

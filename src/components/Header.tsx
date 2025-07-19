@@ -59,7 +59,7 @@ function Header() {
   <div className="tooltip-content">
     <div className="animate-bounce text-orange-400 -rotate-10 text-xl font-black">yehey!</div>
   </div>
-  <a href="/JARS-resume.pdf" download className="btn btn-primary btn-xs s:btn-sm">
+  <a href="/RESUME-JohnAnthonySolana.pdf" download className="btn btn-primary btn-xs s:btn-sm">
     Resume
     <FcDownload />
   </a>
