@@ -9,8 +9,8 @@ function Nav() {
     <nav className="w-full flex  justify-center items-center    " >
       <ul className="w-full  max-w-[500px] bg-neutral/10 flex items-center justify-between  gap-2 rounded-xl p-2 shadow-md border border-neutral/10">
         {nav.map((li, index) => (
-          <li key={index} className={`w-full  rounded-lg ${CurrLocation.pathname === li.link ? 'transition-all duration-300 ease-in bg-primary ' : 'bg-base-200'} `}>
-            <Link to={li.link} className="flex items-center justify-center font-medium text-sm  py-3 gap-2 ">
+          <li key={index} className={`w-full  rounded-lg ${CurrLocation.pathname === li.link ? 'transition-all duration-300 ease-in  bg-primary ' : 'bg-base-200'} `}>
+            <Link to={li.link} className="flex items-center justify-center font-medium text-sm  py-3 gap-2 transition-all duration-300 hover:bg-primary hover:rounded-lg  ">
               <span>{ <li.icon />}</span>
               {li.text}
             </Link>
