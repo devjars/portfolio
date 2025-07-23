@@ -40,7 +40,8 @@ import {
   FaLinkedin,
   FaFacebookSquare,
   FaUserAlt ,
-  FaFolder 
+  FaFolder,
+  FaPhp  
 } from "react-icons/fa";
 
 import {
@@ -132,6 +133,9 @@ const stacks: badgetype[] = [
   { text: "GitHub", icon: FaGithub },
   { text: "Postman", icon: SiPostman },
   { text: "Canva", icon: SiCanva },
+  { text: "php", icon: FaPhp },
+
+   
 ];
  const services: service[] = [
   {
