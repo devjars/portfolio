@@ -10,7 +10,7 @@ import {  type ReactNode } from "react"
 function Box({label,title,icon,children,classname} : props) {
   
   return (
-    <div className="w-full h-full   bg-neutral/10 rounded-2xl flex flex-col  shadow-md border border-neutral/10  ">
+    <div className="w-full h-full   bg-neutral/10 rounded-2xl flex flex-col  shadow-md border border-neutral/10 overflow-hidden ">
       <div className="w-full flex flex-col  items-center  py-6  ">
        <span className="flex items-center justify-center gap-1 ">
         <span className="text-secondary">
