@@ -37,7 +37,7 @@ function Services() {
             {servicesrevese}
          </Marquee>
          {/* View More (opens modal) */}
-        <Link to="/services" className="btn btn-primary absolute inset-y-[65%] z-50 px-8">View all</Link>
+        <Link to="/services" className="btn btn-primary absolute inset-y-[50%] z-50 px-8">View all</Link>
 
       
     </div>

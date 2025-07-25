@@ -14,7 +14,7 @@ function Projects() {
             ))}
            </Marquee>
 
-          <Link to="/work" className="btn btn-primary absolute inset-y-[65%] z-20"> View Works</Link>
+          <Link to="/work" className="btn btn-primary absolute inset-y-[50%] z-20"> View Works</Link>
 
 
 
